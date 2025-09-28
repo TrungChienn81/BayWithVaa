@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #000;
+}
+/* Định dạng kích thước cột ID */
+th:nth-child(1), td:nth-child(1) {
+    width: 30px;
+}
+
+/* Định dạng kích thước cột Ngày */
+th:nth-child(2), td:nth-child(2) {
+    width: 80px;
+}
+
+/* Định dạng kích thước cột Họ Tên */
+th:nth-child(3), td:nth-child(3) {
+    width: 100px;
+}
+
+/* Định dạng kích thước cột Email */
+th:nth-child(4), td:nth-child(4) {
+    width: 90px;
+}
+
+/* Định dạng kích thước cột Số Điện Thoại */
+th:nth-child(5), td:nth-child(5) {
+    width: 80px;
+}
+
+/* Định dạng kích thước cột Nội Dung */
+th:nth-child(6), td:nth-child(6) {
+    width: 300px;
+}
+
+/* Định dạng kích thước cột Action */
+th:nth-child(7), td:nth-child(7) {
+    width: 5px;
+}
+/* Phân trang */
+.pagination {
+  display: flex;
+  justify-content: center;  
+  margin: 20px 0;
+}
+.pagination span {
+  margin: 0 10px; 
+  margin-top: 8px;  
+}
+.pagination a {
+  background-color: #1e90ff;
+  color: #fff; 
+  padding: 8px 15px;
+  border: none;   
+  border-radius: 5px; 
+  margin: 0 5px; /* Thêm margin giữa các nút */
+}
+
+.pagination a:hover {
+  background-color: #55aaff;
+}
+
+.pagination a.disabled {
+   background-color: #ddd;
+   color: #444;
+}
+
+.btn-status {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;  
+  border: 1px solid red;
+  font-size: 18px;
+}
+
+.btn-status:hover {
+  background: #f5c6cb;
+}
+
+.tagged {
+  background-color: #d1e7dd;
+  color: green;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 20px;
+}

@@ -1,0 +1,182 @@
+        .container {
+            display: flex;
+            position: relative; /* Để các thẻ a nằm trong .container */
+        }
+
+        .task-list {
+            width: 70%;
+            height: 600px;
+            overflow-y: auto;
+            border-right: 1px solid #ccc;
+            padding-right: 20px;
+            background-color: white; /* Background color của khung chứa task */
+            border: 1px solid #ccc; /* Border cho khung chứa task */
+            padding: 10px; /* Thêm padding để tạo khoảng cách */
+			border-radius: 10px;
+        }
+
+        .task-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .task-list li {
+            margin-bottom: 20px; /* Tăng khoảng cách giữa các nhiệm vụ */
+            border-radius: 10px; /* Radius cho khung nhiệm vụ */
+            border: 1px solid #ccc; /* Border cho khung nhiệm vụ */
+            padding: 10px; /* Thêm padding để tạo khoảng cách */
+            position: relative; /* Để tạo vị trí tương đối cho note */
+        }
+			.add-note {
+		  display: inline-block;
+		  padding: 10px 20px;
+		  background-color: #3170A3;
+		  color: white;
+		  text-decoration: none;
+		  border-radius: 4px;
+		  font-weight: bold;
+		  transition: background-color 0.3s ease;
+		}
+		.add-note:hover{
+			background-color: cornflowerblue;
+		}
+		.done-button {
+			background-color: purple;
+			border: none;
+			color: white;
+			padding: 8px 16px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 4px;
+			transition: background-color 0.3s ease;
+		}
+
+		.done-button:hover {
+			background-color: mediumpurple;
+		}
+
+        .task-details {
+            position: relative; /* Để tạo vị trí tương đối cho note */
+        }
+
+        .status-indicators {
+            width: 30%;
+            display: flex;
+            flex-direction: column; /* Để các status indicators nằm theo hàng dọc */
+            justify-content: space-around;
+            align-items: center;
+            background-color: #f5f5f5; /* Background color của khung chứa status indicators */
+            border: 1px solid #ccc; /* Border cho khung chứa status indicators */
+            padding: 10px; /* Thêm padding để tạo khoảng cách */
+			border-radius: 10px;
+        }
+		.status-indicator {
+			width: 400px; /* Độ rộng của status indicator */
+			height: 100px; /* Độ cao của status indicator */
+			border-radius: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 10px; /* Khoảng cách giữa các status indicator */
+		}
+
+		
+		.status-indicator .body {
+			width: 500px; /* Độ rộng của phần thân */
+			height: 100px; /* Độ cao của phần thân */
+			background-color: white;
+			border: 1px solid #ccc; /* Border cho phần thân của status indicator */
+			border-radius: 20px;
+		}
+		.status-indicator .head {
+		width: 150px; /* Độ rộng của phần đầu */
+		height: 50px; /* Độ cao của phần đầu */
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		display: flex;
+		justify-content: center; /* Căn giữa theo chiều ngang */
+		align-items: center; /* Căn giữa theo chiều dọc */
+		font-size: 35px; /* Kích thước của icon */
+	}
+.notification-bell {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+}
+
+.notification-bell .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 50%;
+}
+#user-info-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-info label {
+  width: 120px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.user-info input[type="email"],
+.user-info input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#form-user {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+#form-user .user-info:nth-child(1),
+#form-user .user-info:nth-child(2) {
+  grid-column: 1 / span 2;
+}
+
+#form-user .user-info:nth-child(3),
+#form-user .user-info:nth-child(4),
+#form-user .user-info:nth-child(5) {
+  grid-column: 1 / span 1;
+}
+
+#form-user input[type="submit"] {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: deeppink;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#form-user input[type="submit"]:hover{
+	background-color: hotpink;
+}

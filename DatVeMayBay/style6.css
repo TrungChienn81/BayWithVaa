@@ -1,0 +1,86 @@
+/* CSS chung cho form search và thong tin chuyen bay */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Form search styling */
+#formSearch {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#formSearch label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#formSearch input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formSearch button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Kiểu dáng cho thông tin chuyen bay */
+#chuyenbay_results_ngaydi,
+#chuyenbay_results_ngayve {
+    margin-top: 20px;
+}
+
+#chuyenbay_results_ngaydi h3,
+#chuyenbay_results_ngayve h3 {
+    color: #4CAF50;
+}
+
+.chuyen-bay-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.chuyen-bay-item strong {
+    display: inline-block;
+    width: 150px;
+}
+
+.btnXemThem {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.divThongTin {
+    display: none;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+

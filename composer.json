@@ -1,0 +1,15 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "*",
+        "sendgrid/sendgrid": "*",
+        "mailgun/mailgun-php": "*",
+        "stripe/stripe-php": "^13.14",
+        "nyholm/psr7": "^1.8",
+        "dompdf/dompdf": "^2.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}

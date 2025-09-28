@@ -1,0 +1,55 @@
+body, h1, h2, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+#add-baiviet-form {
+    width: 100%; /* Đặt chiều rộng là 100% */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Tính cả padding và border vào chiều rộng */
+}
+
+#add-baiviet-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#add-baiviet-form input,
+#add-baiviet-form select,
+#add-baiviet-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#add-baiviet-form textarea {
+    resize: vertical;
+}
+
+#add-baiviet-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add-baiviet-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
